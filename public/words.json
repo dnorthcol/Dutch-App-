@@ -1,0 +1,3334 @@
+{
+  "generatedAt": "2026-05-07T18:53:51.337Z",
+  "count": 416,
+  "cards": [
+    {
+      "id": 1,
+      "dutch": "mij - Mijn",
+      "english": "me - mine",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 2,
+      "dutch": "je - jouw",
+      "english": "your -yours",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 3,
+      "dutch": "u - uw",
+      "english": "you - yours",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 4,
+      "dutch": "hem - zijn",
+      "english": "him - his",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 5,
+      "dutch": "haar - haar",
+      "english": "her - hers",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 6,
+      "dutch": "ons - ons",
+      "english": "us -ours",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 7,
+      "dutch": "jullie - jullie",
+      "english": "you - your",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 8,
+      "dutch": "hun - hun",
+      "english": "them - their",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 9,
+      "dutch": "Wie ben jij ?",
+      "english": "Who are you?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 10,
+      "dutch": "Hoe heet jij ?",
+      "english": "What is your name?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 11,
+      "dutch": "Waar kom jij vandaan ?",
+      "english": "Where do you come from ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 12,
+      "dutch": "Mag ik ?",
+      "english": "May I ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 13,
+      "dutch": "Mag ik me even voorstellen ?",
+      "english": "May I introduce myself ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 14,
+      "dutch": "Mag ik iets vragen ?",
+      "english": "May I ask something?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 15,
+      "dutch": "Sorry, wat zeg je?",
+      "english": "Sorry, what are you saying ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 16,
+      "dutch": "Ik begrijp jou niet.",
+      "english": "I do not understand you.",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 17,
+      "dutch": "Kun je dat herhalen ?",
+      "english": "Can you repeat that ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 18,
+      "dutch": "Ja, graag !",
+      "english": "Yes, please",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 19,
+      "dutch": "Will jij wat [drinken] ?",
+      "english": "What will you drink ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 20,
+      "dutch": "Maar dit [weekend] kan ik niet",
+      "english": "But, this weekend I can’t",
+      "gender": null,
+      "section": "Questions",
+      "type": "phrase"
+    },
+    {
+      "id": 21,
+      "dutch": "Wat",
+      "english": "What?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 22,
+      "dutch": "Waarom",
+      "english": "Why?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 23,
+      "dutch": "Wie",
+      "english": "Who?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 24,
+      "dutch": "Waar",
+      "english": "Where ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 25,
+      "dutch": "Wanneer",
+      "english": "When?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 26,
+      "dutch": "Welk(e)",
+      "english": "What / Which? ( Welk is voor the “het” words, Welke is for the “de” words).",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 27,
+      "dutch": "Hoe",
+      "english": "How ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 28,
+      "dutch": "Hoeveel",
+      "english": "How much ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 29,
+      "dutch": "Hoe laat",
+      "english": "What time (e.g. Hoe laat is het?)?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 30,
+      "dutch": "Hoe vaak",
+      "english": "How often ?",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 31,
+      "dutch": "altijd",
+      "english": "always",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 32,
+      "dutch": "nooit",
+      "english": "never",
+      "gender": null,
+      "section": "Questions",
+      "type": "word"
+    },
+    {
+      "id": 33,
+      "dutch": "Tot Staks",
+      "english": "See you soon",
+      "gender": null,
+      "section": "To Say Goodbye",
+      "type": "word"
+    },
+    {
+      "id": 34,
+      "dutch": "Tot",
+      "english": "Until",
+      "gender": null,
+      "section": "To Say Goodbye",
+      "type": "word"
+    },
+    {
+      "id": 35,
+      "dutch": "Tot volgende week",
+      "english": "See you next week",
+      "gender": null,
+      "section": "To Say Goodbye",
+      "type": "phrase"
+    },
+    {
+      "id": 36,
+      "dutch": "Welterusten",
+      "english": "Goodnight",
+      "gender": null,
+      "section": "To Say Goodbye",
+      "type": "word"
+    },
+    {
+      "id": 37,
+      "dutch": "vandaag",
+      "english": "today",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 38,
+      "dutch": "morgen",
+      "english": "tomorrow",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 39,
+      "dutch": "overmorgen",
+      "english": "day after tomorrow",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 40,
+      "dutch": "gisteren",
+      "english": "yesterday",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 41,
+      "dutch": "geleden",
+      "english": "ago",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 42,
+      "dutch": "eergisteren",
+      "english": "day before yesterday",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 43,
+      "dutch": "‘s ochtends",
+      "english": "in the morning",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 44,
+      "dutch": "'s middacht",
+      "english": "at noon",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 45,
+      "dutch": "‘s avond",
+      "english": "in the evening",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 46,
+      "dutch": "'s nacht",
+      "english": "at night",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 47,
+      "dutch": "andere keer",
+      "english": "another time",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 48,
+      "dutch": "keer",
+      "english": "time (occasion)",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 49,
+      "dutch": "er zijn in",
+      "english": "looking forward to",
+      "gender": null,
+      "section": "Time",
+      "type": "phrase"
+    },
+    {
+      "id": 50,
+      "dutch": "hele [dag]",
+      "english": "whole day",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 51,
+      "dutch": "hoe laat",
+      "english": "what time",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 52,
+      "dutch": "te laat",
+      "english": "too late",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 53,
+      "dutch": "elke dag",
+      "english": "every day",
+      "gender": null,
+      "section": "Time",
+      "type": "word"
+    },
+    {
+      "id": 54,
+      "dutch": "kun",
+      "english": "can",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 55,
+      "dutch": "herhalen",
+      "english": "repeat",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 56,
+      "dutch": "doen",
+      "english": "to do",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 57,
+      "dutch": "komen",
+      "english": "to come",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 58,
+      "dutch": "mogen",
+      "english": "may / allowed to",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 59,
+      "dutch": "moeten",
+      "english": "must / have to",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 60,
+      "dutch": "maken",
+      "english": "to make",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 61,
+      "dutch": "mak",
+      "english": "make",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 62,
+      "dutch": "willen",
+      "english": "want",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 63,
+      "dutch": "mag",
+      "english": "allowed",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 64,
+      "dutch": "loop",
+      "english": "walk",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 65,
+      "dutch": "tijd",
+      "english": "time",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 66,
+      "dutch": "gaan / ga",
+      "english": "to go / go",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 67,
+      "dutch": "winkel",
+      "english": "store",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 68,
+      "dutch": "winkelen",
+      "english": "to shop",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 69,
+      "dutch": "werken",
+      "english": "to work",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 70,
+      "dutch": "missen",
+      "english": "to miss",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 71,
+      "dutch": "samen",
+      "english": "together",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 72,
+      "dutch": "hele",
+      "english": "whole (e.g. hele nacht)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 73,
+      "dutch": "dochter",
+      "english": "daughter",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 74,
+      "dutch": "ouders",
+      "english": "parents",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 75,
+      "dutch": "neef",
+      "english": "cousin",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 76,
+      "dutch": "neef",
+      "english": "nephew",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 77,
+      "dutch": "oom",
+      "english": "unchle",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 78,
+      "dutch": "tante",
+      "english": "aunt",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 79,
+      "dutch": "lijkt",
+      "english": "like / seems",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 80,
+      "dutch": "dat klopt",
+      "english": "thats right",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 81,
+      "dutch": "volwassene",
+      "english": "adult",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 82,
+      "dutch": "grootouders",
+      "english": "grandparents",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 83,
+      "dutch": "elkaar",
+      "english": "eachother",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 84,
+      "dutch": "gezin",
+      "english": "(small) family",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 85,
+      "dutch": "glijbaan",
+      "english": "slide (kids slide).",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 86,
+      "dutch": "haan",
+      "english": "rooster",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 87,
+      "dutch": "schaats",
+      "english": "skate",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 88,
+      "dutch": "wolk",
+      "english": "cloud",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 89,
+      "dutch": "lucht",
+      "english": "sky (e.g. geen wolkje aan de lucht).",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 90,
+      "dutch": "getrouwd",
+      "english": "married",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 91,
+      "dutch": "misschien",
+      "english": "maybe",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 92,
+      "dutch": "staat",
+      "english": "stands",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 93,
+      "dutch": "verliefd",
+      "english": "in love",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 94,
+      "dutch": "boos",
+      "english": "angry",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 95,
+      "dutch": "takening",
+      "english": "drawing",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 96,
+      "dutch": "lachen",
+      "english": "laugh",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 97,
+      "dutch": "moelijk",
+      "english": "difficult",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 98,
+      "dutch": "ren",
+      "english": "run",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 99,
+      "dutch": "praat",
+      "english": "talk",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 100,
+      "dutch": "reis",
+      "english": "travel",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 101,
+      "dutch": "denken",
+      "english": "think",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 102,
+      "dutch": "even denken",
+      "english": "let me think, just think",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 103,
+      "dutch": "veel",
+      "english": "a lot of",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 104,
+      "dutch": "buiten",
+      "english": "outside",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 105,
+      "dutch": "binnen",
+      "english": "inside",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 106,
+      "dutch": "thuis",
+      "english": "at home",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 107,
+      "dutch": "(het) idee",
+      "english": "idea",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 108,
+      "dutch": "leuk",
+      "english": "nice",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 109,
+      "dutch": "ontmoeten",
+      "english": "to meet",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 110,
+      "dutch": "sporten",
+      "english": "excersise",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 111,
+      "dutch": "van…tot",
+      "english": "from … until …",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 112,
+      "dutch": "elke",
+      "english": "each, every",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 113,
+      "dutch": "duren",
+      "english": "to last, take",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 114,
+      "dutch": "geld",
+      "english": "money",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 115,
+      "dutch": "sluiten",
+      "english": "to close",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 116,
+      "dutch": "gelden",
+      "english": "ago (e.g. veel jaar helden)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 117,
+      "dutch": "makkelijk",
+      "english": "easy",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 118,
+      "dutch": "wat [fruit]",
+      "english": "some [fruit]",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 119,
+      "dutch": "afspraak",
+      "english": "appointment",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 120,
+      "dutch": "nemen",
+      "english": "to take",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 121,
+      "dutch": "noot",
+      "english": "nut",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 122,
+      "dutch": "snel",
+      "english": "fast",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 123,
+      "dutch": "wachten",
+      "english": "to wait (wachten op - to wait for)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 124,
+      "dutch": "opstaan",
+      "english": "to wake up",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 125,
+      "dutch": "tanden poetsen",
+      "english": "brush teeth",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 126,
+      "dutch": "schrift",
+      "english": "the notebook",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 127,
+      "dutch": "fies",
+      "english": "botttle",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 128,
+      "dutch": "horloge",
+      "english": "the watch",
+      "gender": "het",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 129,
+      "dutch": "raam",
+      "english": "window",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 130,
+      "dutch": "sleutel",
+      "english": "key",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 131,
+      "dutch": "daar",
+      "english": "there",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 132,
+      "dutch": "daarna",
+      "english": "after that",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 133,
+      "dutch": "dan",
+      "english": "then",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 134,
+      "dutch": "durk",
+      "english": "busy",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 135,
+      "dutch": "eerst",
+      "english": "first",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 136,
+      "dutch": "graag gedaan",
+      "english": "you are welcome",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 137,
+      "dutch": "heel erg",
+      "english": "very much",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 138,
+      "dutch": "hopen",
+      "english": "hope",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 139,
+      "dutch": "kwijt",
+      "english": "lost",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 140,
+      "dutch": "moeten",
+      "english": "must have",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 141,
+      "dutch": "mogen",
+      "english": "may",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 142,
+      "dutch": "onthouden",
+      "english": "to remember",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 143,
+      "dutch": "de straat oversteken",
+      "english": "to cross the street",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 144,
+      "dutch": "links",
+      "english": "left",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 145,
+      "dutch": "recht",
+      "english": "right",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 146,
+      "dutch": "rechtdoor",
+      "english": "straight",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 147,
+      "dutch": "terug",
+      "english": "back",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 148,
+      "dutch": "uitkijken",
+      "english": "watchout",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 149,
+      "dutch": "verkeerd",
+      "english": "wrong",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 150,
+      "dutch": "weg",
+      "english": "the way",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 151,
+      "dutch": "einde",
+      "english": "the end",
+      "gender": "het",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 152,
+      "dutch": "hoek",
+      "english": "the corner",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 153,
+      "dutch": "kruispunt",
+      "english": "crossroad",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 154,
+      "dutch": "linkerhand",
+      "english": "lefthandside",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 155,
+      "dutch": "rechtterhand",
+      "english": "righthandside",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 156,
+      "dutch": "splitsing",
+      "english": "junction",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 157,
+      "dutch": "bekend",
+      "english": "familiar",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 158,
+      "dutch": "iemand anders",
+      "english": "someone else",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 159,
+      "dutch": "zoeken",
+      "english": "to look for / to search",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 160,
+      "dutch": "afspreken",
+      "english": "appointment",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 161,
+      "dutch": "autorijden",
+      "english": "to drive a car",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 162,
+      "dutch": "telefoneren",
+      "english": "to call",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 163,
+      "dutch": "De kleuren",
+      "english": "the colors",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 164,
+      "dutch": "Licht[blauw]",
+      "english": "light blue",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 165,
+      "dutch": "Donker[blauw]",
+      "english": "dark blue",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 166,
+      "dutch": "Jazeker",
+      "english": "of course",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 167,
+      "dutch": "beter",
+      "english": "better",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 168,
+      "dutch": "broek",
+      "english": "trousers",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 169,
+      "dutch": "donker",
+      "english": "dark",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 170,
+      "dutch": "licht",
+      "english": "light",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 171,
+      "dutch": "goedkoop",
+      "english": "cheap",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 172,
+      "dutch": "jas",
+      "english": "jacket",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 173,
+      "dutch": "lang",
+      "english": "long",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 174,
+      "dutch": "kort",
+      "english": "short",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 175,
+      "dutch": "kosten",
+      "english": "cost",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 176,
+      "dutch": "passen",
+      "english": "to fit / to try on",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 177,
+      "dutch": "toch",
+      "english": "after all",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 178,
+      "dutch": "veel plezier",
+      "english": "enjoy",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 179,
+      "dutch": "verkopen",
+      "english": "to sell",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 180,
+      "dutch": "vinder",
+      "english": "to think (opinion)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 181,
+      "dutch": "warm",
+      "english": "warm",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 182,
+      "dutch": "winter",
+      "english": "winter",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 183,
+      "dutch": "blouse",
+      "english": "blouse",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 184,
+      "dutch": "boek",
+      "english": "trousers",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 185,
+      "dutch": "gympen",
+      "english": "sneakers",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 186,
+      "dutch": "overhemd",
+      "english": "shirt",
+      "gender": "het",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 187,
+      "dutch": "jurk",
+      "english": "dress",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 188,
+      "dutch": "rok",
+      "english": "skirt",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 189,
+      "dutch": "hard",
+      "english": "loud",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 190,
+      "dutch": "huilen",
+      "english": "to cry",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 191,
+      "dutch": "Waar heb je pijn?",
+      "english": "where does it hurt?",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 192,
+      "dutch": "Wat heb je?",
+      "english": "what do you have ?",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 193,
+      "dutch": "Kan ik wat voor je doen?",
+      "english": "Can I do something for you ?",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 194,
+      "dutch": "Beterschap!",
+      "english": "get well soon.",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 195,
+      "dutch": "Ik ben ziek.",
+      "english": "I am sick",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 196,
+      "dutch": "hooft",
+      "english": "head",
+      "gender": "het",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 197,
+      "dutch": "been",
+      "english": "leg",
+      "gender": "het",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 198,
+      "dutch": "arm",
+      "english": "arm",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 199,
+      "dutch": "buik",
+      "english": "stomach",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 200,
+      "dutch": "rug",
+      "english": "back",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 201,
+      "dutch": "voet",
+      "english": "foot",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 202,
+      "dutch": "borst",
+      "english": "chest",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 203,
+      "dutch": "nek",
+      "english": "neck",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 204,
+      "dutch": "keel",
+      "english": "throat",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 205,
+      "dutch": "vinger",
+      "english": "finger",
+      "gender": "de",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 206,
+      "dutch": "oog",
+      "english": "eye",
+      "gender": "het",
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 207,
+      "dutch": "de neus",
+      "english": "nose",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 208,
+      "dutch": "het oor",
+      "english": "ear",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 209,
+      "dutch": "de mond",
+      "english": "mouth",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 210,
+      "dutch": "het haar",
+      "english": "hair",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 211,
+      "dutch": "ik vind …",
+      "english": "I think (opinion)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 212,
+      "dutch": "Mogen",
+      "english": "to may, to be allowed",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 213,
+      "dutch": "Moeten",
+      "english": "to have to (must)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 214,
+      "dutch": "kunnen",
+      "english": "to can",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 215,
+      "dutch": "willen",
+      "english": "to want",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 216,
+      "dutch": "zullen",
+      "english": "to shall",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 217,
+      "dutch": "hoeven",
+      "english": "to need - always used in a negative sentence and with “niet te..” It’s the opposite of “moeten” … Ik hoef niet te werken",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 218,
+      "dutch": "Ik ben … [_boven]",
+      "english": "I am upstairs",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 219,
+      "dutch": "naast de",
+      "english": "next to",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 220,
+      "dutch": "over de",
+      "english": "over the",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 221,
+      "dutch": "Zij staat [**voor]** de doos.",
+      "english": "she stands [in front] the box",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 222,
+      "dutch": "Zij zit [**binnenin]** de doos.",
+      "english": "she sits [inside] the box",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 223,
+      "dutch": "tussen",
+      "english": "between",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 224,
+      "dutch": "duur",
+      "english": "expensive",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 225,
+      "dutch": "groot",
+      "english": "big",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 226,
+      "dutch": "klein",
+      "english": "small",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 227,
+      "dutch": "schoon",
+      "english": "clean",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 228,
+      "dutch": "vies",
+      "english": "dirty",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 229,
+      "dutch": "mooi",
+      "english": "beautiful",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 230,
+      "dutch": "lelijk",
+      "english": "ugly",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 231,
+      "dutch": "oud",
+      "english": "old",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 232,
+      "dutch": "jong",
+      "english": "young",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 233,
+      "dutch": "dik",
+      "english": "fat /wide/",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 234,
+      "dutch": "dun",
+      "english": "thin /not wide/",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 235,
+      "dutch": "lief",
+      "english": "sweet",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 236,
+      "dutch": "zacht",
+      "english": "soft",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 237,
+      "dutch": "dorst",
+      "english": "thursty",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 238,
+      "dutch": "gebruik",
+      "english": "use",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 239,
+      "dutch": "klein",
+      "english": "kleiner – het kleinst, de kleinste  _(small, smaller, smallest)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 240,
+      "dutch": "hoog",
+      "english": "hoger – het hoogst , de hoogste _(high, higher, highest)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 241,
+      "dutch": "laag",
+      "english": "lager – het laagst, de laagste  _(low, lower, lowest)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 242,
+      "dutch": "groot",
+      "english": "groter – het grootst, de grootste  *(big, bigger, biggest)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 243,
+      "dutch": "goed",
+      "english": "beter – het best  _(good, better, best)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 244,
+      "dutch": "graag",
+      "english": "liever – het liefst  _(rather, more, most)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 245,
+      "dutch": "veel",
+      "english": "meer – het meest _(many, more, most)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 246,
+      "dutch": "weinig",
+      "english": "minder – het minst  _(little, less, least)",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 247,
+      "dutch": "come aan tafel",
+      "english": "come to the table.",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 248,
+      "dutch": "studeren",
+      "english": "study",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 249,
+      "dutch": "Hoeveel kost het?",
+      "english": "How much is it",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 250,
+      "dutch": "Wanneer begint de uitverkoop?",
+      "english": "When does the sale starts?",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 251,
+      "dutch": "Hoe duur zijn de bloemkolen?",
+      "english": "How expensive are the cauliflowers",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 252,
+      "dutch": "Hoe duur is deze biefstuk?",
+      "english": "How expensive is this steak.",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "phrase"
+    },
+    {
+      "id": 253,
+      "dutch": "seizoenen: winter",
+      "english": "winter",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 254,
+      "dutch": "lente",
+      "english": "spring",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 255,
+      "dutch": "zomer",
+      "english": "summer",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 256,
+      "dutch": "herfst.",
+      "english": "autumn / fall",
+      "gender": null,
+      "section": "Vocabulary",
+      "type": "word"
+    },
+    {
+      "id": 257,
+      "dutch": "bad",
+      "english": "the bath",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 258,
+      "dutch": "badkamer",
+      "english": "the bathroom",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 259,
+      "dutch": "bank",
+      "english": "the couch",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 260,
+      "dutch": "bed",
+      "english": "the bed",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 261,
+      "dutch": "dak",
+      "english": "the roof",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 262,
+      "dutch": "deur",
+      "english": "the door",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 263,
+      "dutch": "douche",
+      "english": "the shower",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 264,
+      "dutch": "fornuis",
+      "english": "the stove",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 265,
+      "dutch": "gang",
+      "english": "the corridor, the hallway",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 266,
+      "dutch": "kast",
+      "english": "the closet",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 267,
+      "dutch": "keuken",
+      "english": "the kitchen",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 268,
+      "dutch": "kleed",
+      "english": "the carpet",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 269,
+      "dutch": "koelkast",
+      "english": "the refrigerator",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 270,
+      "dutch": "lamp",
+      "english": "the lamp",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 271,
+      "dutch": "muur",
+      "english": "the wall",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 272,
+      "dutch": "plant",
+      "english": "the plant",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 273,
+      "dutch": "raam",
+      "english": "the window",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 274,
+      "dutch": "schilderij",
+      "english": "the painting",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 275,
+      "dutch": "Slaapkamer",
+      "english": "the bedroom",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 276,
+      "dutch": "stoel",
+      "english": "the chair",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 277,
+      "dutch": "tafel",
+      "english": "the table",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 278,
+      "dutch": "televisie",
+      "english": "the television",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 279,
+      "dutch": "trap",
+      "english": "the stairs",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 280,
+      "dutch": "tuin",
+      "english": "the garden",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 281,
+      "dutch": "wc",
+      "english": "the toilet",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 282,
+      "dutch": "woonkamer",
+      "english": "the living room the attic",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 283,
+      "dutch": "zolder",
+      "english": "attic",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 284,
+      "dutch": "appartement",
+      "english": "the apartment",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 285,
+      "dutch": "besteden",
+      "english": "to spend",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 286,
+      "dutch": "kapstok",
+      "english": "the coat stand",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 287,
+      "dutch": "laatste",
+      "english": "last",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 288,
+      "dutch": "laten",
+      "english": "to let/leave",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 289,
+      "dutch": "laten zien",
+      "english": "to show",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 290,
+      "dutch": "luxe",
+      "english": "luxurious",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 291,
+      "dutch": "meubels",
+      "english": "the furniture",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 292,
+      "dutch": "op bezoek",
+      "english": "to visit",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 293,
+      "dutch": "waar",
+      "english": "true",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 294,
+      "dutch": "zelfs",
+      "english": "even",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 295,
+      "dutch": "arm",
+      "english": "poor",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 296,
+      "dutch": "dik",
+      "english": "fat, thick",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 297,
+      "dutch": "dun",
+      "english": "slim, thin",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 298,
+      "dutch": "goed",
+      "english": "900d",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 299,
+      "dutch": "groot",
+      "english": "big, large",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 300,
+      "dutch": "hard",
+      "english": "hard",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 301,
+      "dutch": "hoog",
+      "english": "high",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 302,
+      "dutch": "koud",
+      "english": "cold",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 303,
+      "dutch": "laag",
+      "english": "low",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 304,
+      "dutch": "langzaam",
+      "english": "Slow",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 305,
+      "dutch": "lekker",
+      "english": "tasty",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 306,
+      "dutch": "moeilijk",
+      "english": "difficult",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 307,
+      "dutch": "nieuw",
+      "english": "new",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 308,
+      "dutch": "rijk",
+      "english": "rich",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 309,
+      "dutch": "slecht",
+      "english": "bad",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 310,
+      "dutch": "slim",
+      "english": "Clever",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 311,
+      "dutch": "vaak",
+      "english": "often",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 312,
+      "dutch": "aannemen",
+      "english": "to take",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 313,
+      "dutch": "aardappel",
+      "english": "the potato",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 314,
+      "dutch": "alvast",
+      "english": "already",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 315,
+      "dutch": "bestellen",
+      "english": "to order",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 316,
+      "dutch": "boerenkool",
+      "english": "the kale",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 317,
+      "dutch": "Eet smakelijk!",
+      "english": "Enjoy your meal! / Bon appetit!",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 318,
+      "dutch": "gehaktbal",
+      "english": "the meat ball",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 319,
+      "dutch": "glas , glazen (de)",
+      "english": "the glass, the glasses",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "phrase"
+    },
+    {
+      "id": 320,
+      "dutch": "groente",
+      "english": "the vegetable",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 321,
+      "dutch": "groentesoep",
+      "english": "the vegetable soup",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 322,
+      "dutch": "menukaart",
+      "english": "the menu",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 323,
+      "dutch": "rekening",
+      "english": "the bill",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 324,
+      "dutch": "reserveren",
+      "english": "to make a reservation",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 325,
+      "dutch": "ui",
+      "english": "the onion",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 326,
+      "dutch": "wat",
+      "english": "something",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 327,
+      "dutch": "welkom",
+      "english": "welcome",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 328,
+      "dutch": "wortel",
+      "english": "the carrot",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 329,
+      "dutch": "hoofdgerecht",
+      "english": "the main course",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 330,
+      "dutch": "nagerecht",
+      "english": "desert",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 331,
+      "dutch": "smaken",
+      "english": "to taste",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 332,
+      "dutch": "voorgerecht",
+      "english": "the starter",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 333,
+      "dutch": "heerlijk",
+      "english": "delicious",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 334,
+      "dutch": "leggen",
+      "english": "to lay, to put (horizontally)",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 335,
+      "dutch": "leven",
+      "english": "to live",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 336,
+      "dutch": "reizen",
+      "english": "to travel",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 337,
+      "dutch": "tekenen",
+      "english": "to draw",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 338,
+      "dutch": "bioscoop",
+      "english": "the cinema",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 339,
+      "dutch": "bos",
+      "english": "the forest",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 340,
+      "dutch": "hond",
+      "english": "the dog",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 341,
+      "dutch": "muziek",
+      "english": "the music",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 342,
+      "dutch": "stoppen",
+      "english": "to stop",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 343,
+      "dutch": "strand",
+      "english": "the beach",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 344,
+      "dutch": "vliegtuig",
+      "english": "the aeroplane",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 345,
+      "dutch": "wandelen",
+      "english": "to walk, to hike",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 346,
+      "dutch": "dragen",
+      "english": "to wear",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 347,
+      "dutch": "duren",
+      "english": "to last",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 348,
+      "dutch": "gerecht",
+      "english": "the dish",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 349,
+      "dutch": "kleding",
+      "english": "the clothes",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 350,
+      "dutch": "precies",
+      "english": "exactly",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 351,
+      "dutch": "special",
+      "english": "special",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 352,
+      "dutch": "tijdens",
+      "english": "during",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 353,
+      "dutch": "altijt",
+      "english": "always",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 354,
+      "dutch": "hagelen",
+      "english": "to hail",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 355,
+      "dutch": "herfst",
+      "english": "Autumn",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 356,
+      "dutch": "meestal",
+      "english": "most of the time",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 357,
+      "dutch": "regenen",
+      "english": "to rain",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 358,
+      "dutch": "schinen",
+      "english": "to shine",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 359,
+      "dutch": "seizoen",
+      "english": "the season",
+      "gender": "het",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 360,
+      "dutch": "sneeuwen",
+      "english": "to snow",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 361,
+      "dutch": "soms",
+      "english": "sometimes",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 362,
+      "dutch": "vriezen",
+      "english": "to freeze",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 363,
+      "dutch": "waaien",
+      "english": "to blow",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 364,
+      "dutch": "winter",
+      "english": "the Winter",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 365,
+      "dutch": "zomer",
+      "english": "the Summer",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 366,
+      "dutch": "zon",
+      "english": "the sun",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 367,
+      "dutch": "activiteit als",
+      "english": "as",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 368,
+      "dutch": "andere",
+      "english": "other betekenen - to mean bezoeken - to visit concert (het) - concert daarom - therefore, druk - busy, crowded",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 369,
+      "dutch": "eerste",
+      "english": "first",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 370,
+      "dutch": "tweede",
+      "english": "second",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 371,
+      "dutch": "derte",
+      "english": "third",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 372,
+      "dutch": "eigenlijk",
+      "english": "actually er zijn - there are even denken - let me think",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 373,
+      "dutch": "favoriet",
+      "english": "favourite",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 374,
+      "dutch": "heel",
+      "english": "very",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 375,
+      "dutch": "iets",
+      "english": "a little",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 376,
+      "dutch": "ieder",
+      "english": "every iedereen - everybody iets - something intormatie (de) - the information kennen (±weten) - to know",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 377,
+      "dutch": "verstaan (±begrijpen)",
+      "english": "understand kleedjesmarkt (de) - the flea market koning (de) - the king",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 378,
+      "dutch": "mensen",
+      "english": "the people misschien - maybe",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 379,
+      "dutch": "sommige",
+      "english": "some spullen (de) - the stuff, the things ..., toch? …right?",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 380,
+      "dutch": "toen",
+      "english": "then (past)",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 381,
+      "dutch": "vaak",
+      "english": "often Veel plezier! - Enjoy",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 382,
+      "dutch": "verjaardag",
+      "english": "birthday verkopen - to sell vertellen - to tell",
+      "gender": "de",
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 383,
+      "dutch": "vorig jaar",
+      "english": "last year",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 384,
+      "dutch": "vragen stellen",
+      "english": "to ask questions",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 385,
+      "dutch": "was",
+      "english": "(past tense of zijn)",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 386,
+      "dutch": "Wat leuk",
+      "english": "How nice",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 387,
+      "dutch": "weten",
+      "english": "to know",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 388,
+      "dutch": "woonplaats",
+      "english": "residence",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 389,
+      "dutch": "kennismaken",
+      "english": "get introduced/aquatinted",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 390,
+      "dutch": "gezonde",
+      "english": "healthy",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 391,
+      "dutch": "snijden",
+      "english": "cutting",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 392,
+      "dutch": "zegt",
+      "english": "say",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 393,
+      "dutch": "uitjes",
+      "english": "onions",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 394,
+      "dutch": "broer",
+      "english": "brother",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 395,
+      "dutch": "leef",
+      "english": "live",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 396,
+      "dutch": "bijten",
+      "english": "to bite",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 397,
+      "dutch": "op slot",
+      "english": "locked",
+      "gender": null,
+      "section": "In de huis",
+      "type": "word"
+    },
+    {
+      "id": 398,
+      "dutch": "terugkomt",
+      "english": "comes back",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 399,
+      "dutch": "Ik geloof  [volgende week]",
+      "english": "I believe [next week] Wanneer gaan we met vakantie? - when are you going on holiday ?",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    },
+    {
+      "id": 400,
+      "dutch": "Hoe laat is het",
+      "english": "what time is it.",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    },
+    {
+      "id": 401,
+      "dutch": "Nog meer [kleuren]",
+      "english": "even more [colours]",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    },
+    {
+      "id": 402,
+      "dutch": "ster",
+      "english": "star",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 403,
+      "dutch": "maan",
+      "english": "moon",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 404,
+      "dutch": "vrachtwagen",
+      "english": "truck",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 405,
+      "dutch": "zeilboot",
+      "english": "sailboat",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 406,
+      "dutch": "dak",
+      "english": "roof",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 407,
+      "dutch": "trui",
+      "english": "sweater",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 408,
+      "dutch": "wat wil je weten?",
+      "english": "what do you want to know ?",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    },
+    {
+      "id": 409,
+      "dutch": "Dat kan",
+      "english": "that is possible",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 410,
+      "dutch": "blij",
+      "english": "happy",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 411,
+      "dutch": "Weet u",
+      "english": "do you know",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 412,
+      "dutch": "Wat is er aan de hand?",
+      "english": "Whats going on ?",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    },
+    {
+      "id": 413,
+      "dutch": "Wat vervelend!",
+      "english": "Thats annoying !",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 414,
+      "dutch": "Kan ik wat voor je doen?",
+      "english": "What can I do for you ? Kan ik je ergens mee helpen? - Can I help you with something ?",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    },
+    {
+      "id": 415,
+      "dutch": "belangrijk",
+      "english": "important",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "word"
+    },
+    {
+      "id": 416,
+      "dutch": "Maar dat is niet waar",
+      "english": "but that is not true",
+      "gender": null,
+      "section": "Weet jij - do you know",
+      "type": "phrase"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="NL Cards" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icon-180.png" />
+    <link rel="icon" href="icon-192.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dutch Flashcards</title>
+  </head>
+  <body>
+    <header class="bar">
+      <h1>NL Cards</h1>
+      <div class="meta"><span id="progress">0 / 0</span></div>
+    </header>
+
+    <section class="controls">
+      <label class="control">
+        <span>Section</span>
+        <select id="section-filter"><option value="*">All</option></select>
+      </label>
+
+      <label class="control">
+        <span>Direction</span>
+        <select id="direction">
+          <option value="nl2en">Dutch → English</option>
+          <option value="en2nl">English → Dutch</option>
+        </select>
+      </label>
+
+      <label class="control">
+        <span>Mode</span>
+        <select id="mode">
+          <option value="srs">Spaced repetition</option>
+          <option value="shuffle">Shuffle all</option>
+        </select>
+      </label>
+
+      <button id="restart" class="ghost">Restart deck</button>
+    </section>
+
+    <main class="stage">
+      <div id="card" class="card" role="button" tabindex="0" aria-label="Tap to flip">
+        <div class="face front">
+          <div class="prompt-meta"><span id="card-section"></span><span id="card-gender"></span></div>
+          <div id="prompt" class="prompt">—</div>
+          <div class="hint">tap to flip</div>
+        </div>
+        <div class="face back">
+          <div id="answer" class="prompt">—</div>
+          <div class="hint">how did you do?</div>
+        </div>
+      </div>
+
+      <div class="actions" id="rate-actions" hidden>
+        <button data-rate="wrong" class="rate wrong">Again</button>
+        <button data-rate="hard" class="rate hard">Hard</button>
+        <button data-rate="good" class="rate good">Good</button>
+      </div>
+
+      <div class="actions" id="flip-actions">
+        <button id="speak" class="ghost" aria-label="Speak Dutch">🔊 Speak</button>
+        <button id="flip" class="primary">Flip</button>
+      </div>
+    </main>
+
+    <footer class="bar bar--footer">
+      <small id="srs-stats">Box 1: 0 · 2: 0 · 3: 0 · 4: 0 · 5: 0</small>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
