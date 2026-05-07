@@ -2,7 +2,7 @@
 // - Network-first for HTML / JS / JSON: updates show up immediately when online,
 //   fall back to cache when offline
 // - Cache-first for static assets (icons, manifest, css): they rarely change
-const VERSION = "v4";
+const VERSION = "v5";
 const CACHE = `nlcards-${VERSION}`;
 const PRECACHE = [
   "./",

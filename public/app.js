@@ -38,13 +38,13 @@ const els = {
   reader: document.getElementById("reader-stage"),
   textPicker: document.getElementById("text-picker"),
   textTitle: document.getElementById("text-title"),
+  textSubtitle: document.getElementById("text-subtitle"),
+  textSource: document.getElementById("text-source"),
   textDutch: document.getElementById("text-dutch"),
   textEnglish: document.getElementById("text-english"),
   showTranslation: document.getElementById("show-translation"),
   speakText: document.getElementById("speak-text"),
-  tooltip: document.getElementById("word-tooltip"),
-  tooltipDutch: document.querySelector(".word-tooltip-dutch"),
-  tooltipEnglish: document.querySelector(".word-tooltip-english"),
+  readerTrans: document.getElementById("reader-trans"),
 };
 
 const data = { vocab: [], grammar: [] };
@@ -288,19 +288,22 @@ function lookupKey(word) {
 }
 
 function renderReader() {
-  // Populate dropdown if empty
-  if (els.textPicker.options.length === 0 && texts.length > 0) {
+  // Build pill picker if empty
+  if (els.textPicker.children.length === 0 && texts.length > 0) {
     for (const t of texts) {
-      const opt = document.createElement("option");
-      opt.value = t.id;
-      opt.textContent = `${t.title}  —  ${t.titleEn}`;
-      els.textPicker.appendChild(opt);
+      const pill = document.createElement("button");
+      pill.className = "text-pill";
+      pill.dataset.textId = t.id;
+      pill.setAttribute("role", "tab");
+      pill.setAttribute("aria-selected", "false");
+      pill.textContent = t.title;
+      pill.addEventListener("click", () => loadText(t.id));
+      els.textPicker.appendChild(pill);
     }
   }
   const targetId = state.reader.lastTextId && texts.some((t) => t.id === state.reader.lastTextId)
     ? state.reader.lastTextId
     : (texts[0] && texts[0].id);
-  if (targetId !== els.textPicker.value) els.textPicker.value = targetId;
   loadText(targetId);
 }
 
@@ -310,70 +313,70 @@ function loadText(id) {
   state.reader.lastTextId = id;
   saveState();
 
-  els.textTitle.textContent = `${currentText.title} — ${currentText.titleEn}`;
+  // Update pill selection
+  els.textPicker.querySelectorAll(".text-pill").forEach((p) => {
+    p.setAttribute("aria-selected", p.dataset.textId === id ? "true" : "false");
+  });
+  // Auto-scroll picker so selected pill is visible
+  const activePill = els.textPicker.querySelector(`.text-pill[aria-selected="true"]`);
+  if (activePill) activePill.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+
+  els.textTitle.textContent = currentText.title;
+  els.textSubtitle.textContent = currentText.titleEn;
+  if (currentText.source) {
+    els.textSource.textContent = currentText.source;
+    els.textSource.hidden = false;
+  } else {
+    els.textSource.hidden = true;
+  }
   els.textDutch.innerHTML = "";
   for (const node of tokenizeAndWrap(currentText.dutch)) els.textDutch.appendChild(node);
   els.textEnglish.textContent = currentText.english;
   els.textEnglish.hidden = !state.reader.showTranslation;
-  hideTooltip();
+  els.showTranslation.setAttribute("aria-pressed", state.reader.showTranslation ? "true" : "false");
+  resetTranslationBar();
 }
 
-function showTooltipFor(span) {
+function resetTranslationBar() {
+  els.readerTrans.innerHTML = '<span class="reader-trans-hint">Tap any word for translation</span>';
+}
+
+function showTranslation(span) {
   if (!currentText) return;
   const word = span.dataset.word;
   const english = currentText.glossary[word];
   if (!english) {
-    hideTooltip();
+    resetTranslationBar();
     return;
   }
-  // Mark active
+  // Highlight active
   document.querySelectorAll(".reader-dutch .w.active").forEach((el) => el.classList.remove("active"));
   span.classList.add("active");
 
-  els.tooltipDutch.textContent = span.textContent;
-  els.tooltipEnglish.textContent = english;
-  els.tooltip.hidden = false;
-
-  // Position above the word, fall back to below if near top
-  const r = span.getBoundingClientRect();
-  const tipR = els.tooltip.getBoundingClientRect();
-  const margin = 6;
-  let top = r.top - tipR.height - margin;
-  if (top < 8) top = r.bottom + margin;
-  let left = r.left + r.width / 2 - tipR.width / 2;
-  left = Math.max(8, Math.min(window.innerWidth - tipR.width - 8, left));
-  els.tooltip.style.top = `${top}px`;
-  els.tooltip.style.left = `${left}px`;
-}
-
-function hideTooltip() {
-  els.tooltip.hidden = true;
-  document.querySelectorAll(".reader-dutch .w.active").forEach((el) => el.classList.remove("active"));
+  els.readerTrans.innerHTML = "";
+  const dEl = document.createElement("span");
+  dEl.className = "reader-trans-dutch";
+  dEl.textContent = span.textContent;
+  const enEl = document.createElement("span");
+  enEl.className = "reader-trans-en";
+  enEl.textContent = english;
+  els.readerTrans.appendChild(dEl);
+  els.readerTrans.appendChild(enEl);
 }
 
 function bindReaderEvents() {
-  els.textPicker.addEventListener("change", () => loadText(els.textPicker.value));
   els.showTranslation.addEventListener("click", () => {
     state.reader.showTranslation = !state.reader.showTranslation;
     saveState();
     els.textEnglish.hidden = !state.reader.showTranslation;
-    els.showTranslation.style.opacity = state.reader.showTranslation ? "1" : "0.6";
+    els.showTranslation.setAttribute("aria-pressed", state.reader.showTranslation ? "true" : "false");
   });
   els.speakText.addEventListener("click", () => {
     if (currentText) speakDutch(currentText.dutch);
   });
   els.textDutch.addEventListener("click", (e) => {
     const span = e.target.closest(".w");
-    if (span && !span.classList.contains("unknown")) {
-      showTooltipFor(span);
-    } else {
-      hideTooltip();
-    }
-  });
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".reader-dutch") && !e.target.closest(".word-tooltip")) {
-      hideTooltip();
-    }
+    if (span && !span.classList.contains("unknown")) showTranslation(span);
   });
 }
 

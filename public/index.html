@@ -86,23 +86,26 @@
     </main>
 
     <main class="reader" id="reader-stage" hidden>
-      <div class="reader-toolbar">
-        <select id="text-picker" aria-label="Choose a text"></select>
-        <button id="show-translation" class="ghost" aria-label="Toggle full English translation">EN</button>
-        <button id="speak-text" class="ghost" aria-label="Speak Dutch text">🔊</button>
-      </div>
-      <article class="reader-body">
-        <h2 id="text-title"></h2>
-        <p id="text-dutch" class="reader-dutch"></p>
-        <p id="text-english" class="reader-english" hidden></p>
-        <p class="reader-hint">Tap a word for translation.</p>
-      </article>
-    </main>
+      <nav class="text-picker" id="text-picker" role="tablist" aria-label="Choose a text"></nav>
 
-    <div id="word-tooltip" class="word-tooltip" role="tooltip" hidden>
-      <div class="word-tooltip-dutch"></div>
-      <div class="word-tooltip-english"></div>
-    </div>
+      <article class="reader-body">
+        <header class="reader-head">
+          <h2 id="text-title"></h2>
+          <p class="reader-subtitle" id="text-subtitle"></p>
+          <small class="reader-source" id="text-source" hidden></small>
+        </header>
+        <p id="text-dutch" class="reader-dutch"></p>
+        <div id="text-english" class="reader-english" hidden></div>
+      </article>
+
+      <div class="reader-bar">
+        <div class="reader-trans" id="reader-trans" aria-live="polite">
+          <span class="reader-trans-hint">Tap any word for translation</span>
+        </div>
+        <button id="show-translation" class="reader-bar-btn" aria-label="Toggle full English translation" aria-pressed="false">EN</button>
+        <button id="speak-text" class="reader-bar-btn" aria-label="Read text aloud">🔊</button>
+      </div>
+    </main>
 
     <footer class="bar bar--footer">
       <small id="srs-stats">Box 1: 0 · 2: 0 · 3: 0 · 4: 0 · 5: 0</small>
