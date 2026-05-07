@@ -19,6 +19,8 @@ const els = {
   answer: document.getElementById("answer"),
   cardSection: document.getElementById("card-section"),
   cardGender: document.getElementById("card-gender"),
+  promptLang: document.getElementById("prompt-lang"),
+  answerLang: document.getElementById("answer-lang"),
   flip: document.getElementById("flip"),
   next: document.getElementById("next"),
   speak: document.getElementById("speak"),
@@ -146,6 +148,8 @@ function render() {
   els.answer.textContent = currentDirection === "nl2en" ? card.english : card.dutch;
   els.cardSection.textContent = card.section || "";
   els.cardGender.textContent = card.gender ? `(${card.gender})` : "";
+  setLangBadge(els.promptLang, currentDirection === "nl2en" ? "nl" : "en");
+  setLangBadge(els.answerLang, currentDirection === "nl2en" ? "en" : "nl");
   els.progress.textContent = `${currentIdx + 1} / ${queue.length}`;
   flipped = false;
   els.card.classList.remove("flipped");
@@ -181,6 +185,13 @@ function next() {
     else currentIdx = queue.length;
   }
   render();
+}
+
+function setLangBadge(el, lang) {
+  if (!el) return;
+  el.classList.remove("nl", "en");
+  el.classList.add(lang);
+  el.textContent = lang === "nl" ? "NL" : "EN";
 }
 
 function speakDutch(text) {

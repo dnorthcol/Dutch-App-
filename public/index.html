@@ -54,11 +54,19 @@
     <main class="stage" id="flashcard-stage">
       <div id="card" class="card" role="button" tabindex="0" aria-label="Tap to flip">
         <div class="face front">
-          <div class="prompt-meta"><span id="card-section"></span><span id="card-gender"></span></div>
+          <div class="prompt-meta">
+            <span id="card-section"></span>
+            <span id="prompt-lang" class="lang-badge"></span>
+          </div>
           <div id="prompt" class="prompt">—</div>
+          <div class="card-foot"><span id="card-gender"></span></div>
           <div class="hint">tap to flip</div>
         </div>
         <div class="face back">
+          <div class="prompt-meta">
+            <span></span>
+            <span id="answer-lang" class="lang-badge"></span>
+          </div>
           <div id="answer" class="prompt">—</div>
           <div class="hint">how did you do?</div>
         </div>
