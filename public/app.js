@@ -37,6 +37,7 @@ let state = loadState();
 let queue = [];
 let currentIdx = 0;
 let flipped = false;
+let currentDirection = "nl2en"; // resolved per-card when prefs.direction === "shuffle"
 
 function defaultPrefs() {
   return { section: "*", direction: "nl2en", mode: "srs" };
@@ -123,9 +124,10 @@ function render() {
     updateSrsStats();
     return;
   }
-  const dir = moduleState().prefs.direction;
-  els.prompt.textContent = dir === "nl2en" ? card.dutch : card.english;
-  els.answer.textContent = dir === "nl2en" ? card.english : card.dutch;
+  const pref = moduleState().prefs.direction;
+  currentDirection = pref === "shuffle" ? (Math.random() < 0.5 ? "nl2en" : "en2nl") : pref;
+  els.prompt.textContent = currentDirection === "nl2en" ? card.dutch : card.english;
+  els.answer.textContent = currentDirection === "nl2en" ? card.english : card.dutch;
   els.cardSection.textContent = card.section || "";
   els.cardGender.textContent = card.gender ? `(${card.gender})` : "";
   els.progress.textContent = `${currentIdx + 1} / ${queue.length}`;
