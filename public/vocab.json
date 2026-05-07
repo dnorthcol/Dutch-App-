@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T18:53:51.337Z",
+  "generatedAt": "2026-05-07T19:20:48.176Z",
   "count": 416,
   "cards": [
     {
@@ -1740,7 +1740,7 @@
     },
     {
       "id": 218,
-      "dutch": "Ik ben … [_boven]",
+      "dutch": "Ik ben … [_boven]",
       "english": "I am upstairs",
       "gender": null,
       "section": "Vocabulary",
@@ -1756,7 +1756,7 @@
     },
     {
       "id": 220,
-      "dutch": "over de",
+      "dutch": "over de",
       "english": "over the",
       "gender": null,
       "section": "Vocabulary",
@@ -1764,7 +1764,7 @@
     },
     {
       "id": 221,
-      "dutch": "Zij staat [**voor]** de doos.",
+      "dutch": "Zij staat [**voor]** de doos.",
       "english": "she stands [in front] the box",
       "gender": null,
       "section": "Vocabulary",
@@ -1772,7 +1772,7 @@
     },
     {
       "id": 222,
-      "dutch": "Zij zit [**binnenin]** de doos.",
+      "dutch": "Zij zit [**binnenin]** de doos.",
       "english": "she sits [inside] the box",
       "gender": null,
       "section": "Vocabulary",
@@ -1909,7 +1909,7 @@
     {
       "id": 239,
       "dutch": "klein",
-      "english": "kleiner – het kleinst, de kleinste  _(small, smaller, smallest)",
+      "english": "kleiner – het kleinst, de kleinste  _(small, smaller, smallest)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1917,7 +1917,7 @@
     {
       "id": 240,
       "dutch": "hoog",
-      "english": "hoger – het hoogst , de hoogste _(high, higher, highest)",
+      "english": "hoger – het hoogst , de hoogste _(high, higher, highest)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1925,7 +1925,7 @@
     {
       "id": 241,
       "dutch": "laag",
-      "english": "lager – het laagst, de laagste  _(low, lower, lowest)",
+      "english": "lager – het laagst, de laagste  _(low, lower, lowest)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1933,7 +1933,7 @@
     {
       "id": 242,
       "dutch": "groot",
-      "english": "groter – het grootst, de grootste  *(big, bigger, biggest)",
+      "english": "groter – het grootst, de grootste  *(big, bigger, biggest)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1941,7 +1941,7 @@
     {
       "id": 243,
       "dutch": "goed",
-      "english": "beter – het best  _(good, better, best)",
+      "english": "beter – het best  _(good, better, best)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1949,7 +1949,7 @@
     {
       "id": 244,
       "dutch": "graag",
-      "english": "liever – het liefst  _(rather, more, most)",
+      "english": "liever – het liefst  _(rather, more, most)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1957,7 +1957,7 @@
     {
       "id": 245,
       "dutch": "veel",
-      "english": "meer – het meest _(many, more, most)",
+      "english": "meer – het meest _(many, more, most)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -1965,7 +1965,7 @@
     {
       "id": 246,
       "dutch": "weinig",
-      "english": "minder – het minst  _(little, less, least)",
+      "english": "minder – het minst  _(little, less, least)",
       "gender": null,
       "section": "Vocabulary",
       "type": "word"
@@ -3188,7 +3188,7 @@
     },
     {
       "id": 399,
-      "dutch": "Ik geloof  [volgende week]",
+      "dutch": "Ik geloof  [volgende week]",
       "english": "I believe [next week] Wanneer gaan we met vakantie? - when are you going on holiday ?",
       "gender": null,
       "section": "Weet jij - do you know",

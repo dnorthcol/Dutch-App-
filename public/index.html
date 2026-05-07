@@ -19,6 +19,11 @@
       <div class="meta"><span id="progress">0 / 0</span></div>
     </header>
 
+    <nav class="tabs" role="tablist">
+      <button class="tab" data-module="vocab" role="tab" aria-selected="true">Vocabulary</button>
+      <button class="tab" data-module="grammar" role="tab" aria-selected="false">Grammar</button>
+    </nav>
+
     <section class="controls">
       <label class="control">
         <span>Section</span>
@@ -64,8 +69,9 @@
       </div>
 
       <div class="actions" id="flip-actions">
-        <button id="speak" class="ghost" aria-label="Speak Dutch">🔊 Speak</button>
+        <button id="speak" class="ghost" aria-label="Speak Dutch">🔊</button>
         <button id="flip" class="primary">Flip</button>
+        <button id="next" class="ghost" aria-label="Next card">Next ›</button>
       </div>
     </main>
 

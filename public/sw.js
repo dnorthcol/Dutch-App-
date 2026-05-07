@@ -1,12 +1,13 @@
 // Minimal cache-first service worker so the app works offline once visited.
-const VERSION = "v1";
+const VERSION = "v2";
 const CACHE = `nlcards-${VERSION}`;
 const ASSETS = [
   "./",
   "index.html",
   "styles.css",
   "app.js",
-  "words.json",
+  "vocab.json",
+  "grammar.json",
   "manifest.webmanifest",
   "icon-192.png",
   "icon-512.png",

@@ -1,0 +1,540 @@
+{
+  "generatedAt": "2026-05-07T19:20:48.179Z",
+  "count": 89,
+  "cards": [
+    {
+      "id": 1,
+      "dutch": "Zijn",
+      "english": "to be",
+      "section": "“to be” and “to have”"
+    },
+    {
+      "id": 2,
+      "dutch": "Hebben",
+      "english": "to have",
+      "section": "“to be” and “to have”"
+    },
+    {
+      "id": 3,
+      "dutch": "ik",
+      "english": "I",
+      "section": "Pronouns"
+    },
+    {
+      "id": 4,
+      "dutch": "mij/me",
+      "english": "me",
+      "section": "Pronouns"
+    },
+    {
+      "id": 5,
+      "dutch": "mijn/m’n",
+      "english": "my",
+      "section": "Pronouns"
+    },
+    {
+      "id": 6,
+      "dutch": "me",
+      "english": "myself",
+      "section": "Pronouns"
+    },
+    {
+      "id": 7,
+      "dutch": "jij",
+      "english": "you",
+      "section": "Pronouns"
+    },
+    {
+      "id": 8,
+      "dutch": "je/jou",
+      "english": "you",
+      "section": "Pronouns"
+    },
+    {
+      "id": 9,
+      "dutch": "jouw/je",
+      "english": "your",
+      "section": "Pronouns"
+    },
+    {
+      "id": 10,
+      "dutch": "je",
+      "english": "yourself",
+      "section": "Pronouns"
+    },
+    {
+      "id": 11,
+      "dutch": "u",
+      "english": "you",
+      "section": "Pronouns"
+    },
+    {
+      "id": 12,
+      "dutch": "uw",
+      "english": "your",
+      "section": "Pronouns"
+    },
+    {
+      "id": 13,
+      "dutch": "zich",
+      "english": "yourself",
+      "section": "Pronouns"
+    },
+    {
+      "id": 14,
+      "dutch": "hij",
+      "english": "he",
+      "section": "Pronouns"
+    },
+    {
+      "id": 15,
+      "dutch": "hem",
+      "english": "him",
+      "section": "Pronouns"
+    },
+    {
+      "id": 16,
+      "dutch": "zijn/z’n",
+      "english": "his",
+      "section": "Pronouns"
+    },
+    {
+      "id": 17,
+      "dutch": "zich",
+      "english": "himself",
+      "section": "Pronouns"
+    },
+    {
+      "id": 18,
+      "dutch": "zij/ze",
+      "english": "she",
+      "section": "Pronouns"
+    },
+    {
+      "id": 19,
+      "dutch": "haar",
+      "english": "her",
+      "section": "Pronouns"
+    },
+    {
+      "id": 20,
+      "dutch": "haar/ze",
+      "english": "her",
+      "section": "Pronouns"
+    },
+    {
+      "id": 21,
+      "dutch": "zich",
+      "english": "herself",
+      "section": "Pronouns"
+    },
+    {
+      "id": 22,
+      "dutch": "het",
+      "english": "it",
+      "section": "Pronouns"
+    },
+    {
+      "id": 23,
+      "dutch": "het/‘t",
+      "english": "him",
+      "section": "Pronouns"
+    },
+    {
+      "id": 24,
+      "dutch": "zijn",
+      "english": "his",
+      "section": "Pronouns"
+    },
+    {
+      "id": 25,
+      "dutch": "zich",
+      "english": "itself",
+      "section": "Pronouns"
+    },
+    {
+      "id": 26,
+      "dutch": "Wij/we",
+      "english": "we",
+      "section": "Pronouns"
+    },
+    {
+      "id": 27,
+      "dutch": "ons",
+      "english": "us",
+      "section": "Pronouns"
+    },
+    {
+      "id": 28,
+      "dutch": "ons/onze",
+      "english": "our",
+      "section": "Pronouns"
+    },
+    {
+      "id": 29,
+      "dutch": "ons",
+      "english": "ourselves",
+      "section": "Pronouns"
+    },
+    {
+      "id": 30,
+      "dutch": "jullie",
+      "english": "you",
+      "section": "Pronouns"
+    },
+    {
+      "id": 31,
+      "dutch": "jullie",
+      "english": "your",
+      "section": "Pronouns"
+    },
+    {
+      "id": 32,
+      "dutch": "je",
+      "english": "yourselves",
+      "section": "Pronouns"
+    },
+    {
+      "id": 33,
+      "dutch": "zij/ze",
+      "english": "they",
+      "section": "Pronouns"
+    },
+    {
+      "id": 34,
+      "dutch": "ze/hun/hen",
+      "english": "them",
+      "section": "Pronouns"
+    },
+    {
+      "id": 35,
+      "dutch": "hen",
+      "english": "them",
+      "section": "Pronouns"
+    },
+    {
+      "id": 36,
+      "dutch": "hun",
+      "english": "their",
+      "section": "Pronouns"
+    },
+    {
+      "id": 37,
+      "dutch": "zich",
+      "english": "themselves",
+      "section": "Pronouns"
+    },
+    {
+      "id": 38,
+      "dutch": "het kopje – de kopjes",
+      "english": "the cup – the cups",
+      "section": "Plural"
+    },
+    {
+      "id": 39,
+      "dutch": "de tante – de tantes",
+      "english": "the aunt – the aunts",
+      "section": "Plural"
+    },
+    {
+      "id": 40,
+      "dutch": "de tafel – de tafels",
+      "english": "the table – the tables",
+      "section": "Plural"
+    },
+    {
+      "id": 41,
+      "dutch": "de jongen – de jongens",
+      "english": "the boy – the boys",
+      "section": "Plural"
+    },
+    {
+      "id": 42,
+      "dutch": "de taxi – de taxi’s",
+      "english": "the cab – the cabs",
+      "section": "Plural"
+    },
+    {
+      "id": 43,
+      "dutch": "de agenda – de agenda’s",
+      "english": "the agenda – the agenda’s",
+      "section": "Plural"
+    },
+    {
+      "id": 44,
+      "dutch": "–_ de radio – de radio’s",
+      "english": "the radio – the radio’s",
+      "section": "Plural"
+    },
+    {
+      "id": 45,
+      "dutch": "het boek – de boeken",
+      "english": "the book – the books",
+      "section": "Plural"
+    },
+    {
+      "id": 46,
+      "dutch": "de krant – de kranten",
+      "english": "the newspaper – the newspapers",
+      "section": "Plural"
+    },
+    {
+      "id": 47,
+      "dutch": "de vrouw – de vrouwen",
+      "english": "the woman – the women",
+      "section": "Plural"
+    },
+    {
+      "id": 48,
+      "dutch": "Ik heb geen kinderen.",
+      "english": "I have no children.",
+      "section": "Negation"
+    },
+    {
+      "id": 49,
+      "dutch": "Ik heb geen vakantie deze week.",
+      "english": "I have no vacation this week.",
+      "section": "Negation"
+    },
+    {
+      "id": 50,
+      "dutch": "Zij heeft geen auto.",
+      "english": "She doesn’t have a car.",
+      "section": "Negation"
+    },
+    {
+      "id": 51,
+      "dutch": "Ik maak het huiswerk niet.",
+      "english": "I don’t make that homework",
+      "section": "Negation"
+    },
+    {
+      "id": 52,
+      "dutch": "Ik lees dat boek niet.",
+      "english": "I don’t read that book",
+      "section": "Negation"
+    },
+    {
+      "id": 53,
+      "dutch": "Deze jurk is niet mooi.",
+      "english": "This dress is not beautiful",
+      "section": "Negation"
+    },
+    {
+      "id": 54,
+      "dutch": "Ik vind de film niet leuk.",
+      "english": "I don’t like the movie.",
+      "section": "Negation"
+    },
+    {
+      "id": 55,
+      "dutch": "Dichtbij",
+      "english": "close",
+      "section": "Demonstrative pronouns"
+    },
+    {
+      "id": 56,
+      "dutch": "Ver weg",
+      "english": "far away",
+      "section": "Demonstrative pronouns"
+    },
+    {
+      "id": 57,
+      "dutch": "hier",
+      "english": "here",
+      "section": "Demonstrative pronouns"
+    },
+    {
+      "id": 58,
+      "dutch": "dit",
+      "english": "this",
+      "section": "Demonstrative pronouns"
+    },
+    {
+      "id": 59,
+      "dutch": "deze",
+      "english": "this",
+      "section": "Demonstrative pronouns"
+    },
+    {
+      "id": 60,
+      "dutch": "Ik mag werken.",
+      "english": "I am allowed to work.",
+      "section": "Modal verbs"
+    },
+    {
+      "id": 61,
+      "dutch": "Ik moet werken.",
+      "english": "I have to work.",
+      "section": "Modal verbs"
+    },
+    {
+      "id": 62,
+      "dutch": "Ik kan werken.",
+      "english": "I can work.",
+      "section": "Modal verbs"
+    },
+    {
+      "id": 63,
+      "dutch": "Ik wil werken.",
+      "english": "I want to work.",
+      "section": "Modal verbs"
+    },
+    {
+      "id": 64,
+      "dutch": "Ik zal werken.",
+      "english": "I will/shall work.",
+      "section": "Modal verbs"
+    },
+    {
+      "id": 65,
+      "dutch": "De veilige weg. De onveilige weg.",
+      "english": "The safe way. The unsafe way.",
+      "section": "Opposites"
+    },
+    {
+      "id": 66,
+      "dutch": "De diepe rivier. De ondiepe rivier.",
+      "english": "The deep river. The shallow river.",
+      "section": "Opposites"
+    },
+    {
+      "id": 67,
+      "dutch": "De aardige juf. De onaardige juf.",
+      "english": "The kind teacher. The unkind teacher.",
+      "section": "Opposites"
+    },
+    {
+      "id": 68,
+      "dutch": "goedkoop/duur",
+      "english": "cheap – expensive",
+      "section": "Opposites"
+    },
+    {
+      "id": 69,
+      "dutch": "hoog/laag",
+      "english": "high – low",
+      "section": "Opposites"
+    },
+    {
+      "id": 70,
+      "dutch": "groot - klein",
+      "english": "big – small",
+      "section": "Opposites"
+    },
+    {
+      "id": 71,
+      "dutch": "schoon - vies",
+      "english": "clean – dirty",
+      "section": "Opposites"
+    },
+    {
+      "id": 72,
+      "dutch": "mooi - lelijk",
+      "english": "beautiful – ugly",
+      "section": "Opposites"
+    },
+    {
+      "id": 73,
+      "dutch": "oud - jong",
+      "english": "old – young",
+      "section": "Opposites"
+    },
+    {
+      "id": 74,
+      "dutch": "kort - lang",
+      "english": "short – long",
+      "section": "Opposites"
+    },
+    {
+      "id": 75,
+      "dutch": "klein – kleiner – het kleinst, de kleinste",
+      "english": "small, smaller, smallest",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 76,
+      "dutch": "hoog – hoger – het hoogst , de hoogste",
+      "english": "high, higher, highest",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 77,
+      "dutch": "laag – lager – het laagst, de laagste",
+      "english": "low, lower, lowest",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 78,
+      "dutch": "groot – groter – het grootst, de grootste",
+      "english": "big, bigger, biggest",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 79,
+      "dutch": "schoon – schoner – het schoonst, de schoonste",
+      "english": "clean, cleaner, cleanest",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 80,
+      "dutch": "goed – beter – het best",
+      "english": "good, better, best",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 81,
+      "dutch": "graag – liever – het liefst",
+      "english": "rather, more, most",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 82,
+      "dutch": "veel – meer – het meest",
+      "english": "many, more, most",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 83,
+      "dutch": "weinig – minder – het minst",
+      "english": "little, less, least",
+      "section": "Comparable, comparative and superlative"
+    },
+    {
+      "id": 84,
+      "dutch": "kom hier",
+      "english": "come here",
+      "section": "Imperative"
+    },
+    {
+      "id": 85,
+      "dutch": "ga zitten",
+      "english": "go sit down",
+      "section": "Imperative"
+    },
+    {
+      "id": 86,
+      "dutch": "snij de ui",
+      "english": "peel the onion",
+      "section": "Imperative"
+    },
+    {
+      "id": 87,
+      "dutch": "doe niet",
+      "english": "don’t do that",
+      "section": "Imperative"
+    },
+    {
+      "id": 88,
+      "dutch": "raak dat niet aan",
+      "english": "don’t touch that",
+      "section": "Imperative"
+    },
+    {
+      "id": 89,
+      "dutch": "ga niet weg",
+      "english": "don’t go away",
+      "section": "Imperative"
+    }
+  ]
+}

@@ -1,26 +1,23 @@
-// Parses Dutch Vocabulary.md from Obsidian into words.json for the PWA.
+// Parses Obsidian Dutch notes into JSON files for the PWA.
+//   public/vocab.json    ← Dutch Vocabulary.md
+//   public/grammar.json  ← Dutch Grammer.md
 // Run: node build.mjs
 
 import fs from "node:fs";
 import path from "node:path";
 
-const SOURCE = "/Users/delyanpeyankov/Documents/ObsidianVault/Personal/Dutch/Dutch Vocabulary.md";
-const OUT = path.join(import.meta.dirname, "public", "words.json");
+const SOURCES = {
+  vocab: "/Users/delyanpeyankov/Documents/ObsidianVault/Personal/Dutch/Dutch Vocabulary.md",
+  grammar: "/Users/delyanpeyankov/Documents/ObsidianVault/Personal/Dutch/Dutch Grammer.md",
+};
+const OUT_DIR = path.join(import.meta.dirname, "public");
 
-const SEPARATORS = [" —> ", " --> ", " → ", " -> ", " — ", " – ", " - "];
+// ----- shared helpers -------------------------------------------------------
 
-const SKIP_LINE_PATTERNS = [
-  /^\s*$/,
-  /^#+\s/,                       // markdown headings
-  /^\s*\*\*[^*]+\*\*\s*$/,       // bold-only lines (section headers)
-  /^\s*_+[^_]*_+\s*$/,           // italic-only
-  /^\s*---+\s*$/,                // hr
-  /^\s*\|[-:|\s]+\|\s*$/,        // table separator row
-  /^\s*\(?Opposites/i,
-  /^\s*Exceptions/i,
-];
-
-const SECTION_HEADER_RE = /^\s*\*\*([^*]+)\*\*\s*:?\s*$/;
+function stripBoldItalic(s) {
+  // **text** -> text, *text* -> text. Keep underscore-italic intact for pair regex.
+  return s.replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\*([^*]+)\*/g, "$1");
+}
 
 function clean(s) {
   return s
@@ -30,8 +27,33 @@ function clean(s) {
     .trim();
 }
 
+function dedup(cards) {
+  const seen = new Set();
+  return cards.filter((c) => {
+    const key = `${c.dutch.toLowerCase()}|${c.english.toLowerCase()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+// ----- vocab parser (existing) ---------------------------------------------
+
+const SEPARATORS = [" —> ", " --> ", " → ", " -> ", " — ", " – ", " - "];
+
+const VOCAB_SKIP = [
+  /^\s*$/,
+  /^#+\s/,
+  /^\s*\*\*[^*]+\*\*\s*$/,
+  /^\s*_+[^_]*_+\s*$/,
+  /^\s*---+\s*$/,
+  /^\s*\|[-:|\s]+\|\s*$/,
+  /^\s*\(?Opposites/i,
+  /^\s*Exceptions/i,
+];
+const VOCAB_SECTION_HEADER = /^\s*\*\*([^*]+)\*\*\s*:?\s*$/;
+
 function extractGender(dutch) {
-  // "raam (het)" -> { word: "raam", gender: "het" }
   const m = dutch.match(/^(.+?)\s*\((de|het)\)\s*(.*)$/i);
   if (m) {
     const word = (m[1] + " " + m[3]).trim().replace(/\s+/g, " ");
@@ -41,21 +63,15 @@ function extractGender(dutch) {
 }
 
 function tryParseTableRow(line) {
-  // |dutch|english| or |dutch (de)|the dutch|
   if (!line.startsWith("|")) return null;
-  const cells = line.split("|").map((c) => c.trim()).filter((c, i, a) => !(i === 0 || i === a.length - 1) || c.length > 0);
-  // strip leading/trailing empty produced by edge pipes
-  const trimmed = cells.filter(Boolean);
-  if (trimmed.length < 2) return null;
-  // Skip table separator rows like ---|---
-  if (trimmed.every((c) => /^[-:]+$/.test(c))) return null;
-  return { dutch: clean(trimmed[0]), english: clean(trimmed[1]) };
+  const cells = line.split("|").map((c) => c.trim()).filter(Boolean);
+  if (cells.length < 2) return null;
+  if (cells.every((c) => /^[-:]+$/.test(c))) return null;
+  return { dutch: clean(cells[0]), english: clean(cells[1]) };
 }
 
 function tryParseLine(line) {
-  // Strip leading bullet
   let s = line.replace(/^\s*[-*]\s+/, "");
-  // Try each separator longest-first
   for (const sep of SEPARATORS) {
     const idx = s.indexOf(sep);
     if (idx > 0) {
@@ -67,53 +83,33 @@ function tryParseLine(line) {
   return null;
 }
 
-function isUselessPair(dutch, english) {
-  if (!dutch || !english) return true;
-  if (dutch.length > 120 || english.length > 120) return true;
-  // Drop markdown markers leftover
-  if (/^\*+$/.test(dutch) || /^\*+$/.test(english)) return true;
-  // Drop equation-like things
-  if (/^\d+$/.test(dutch) && /^\d+$/.test(english)) return true;
-  return false;
-}
-
-function parse(md) {
+function parseVocab(md) {
   const lines = md.split("\n");
   const cards = [];
-  const seen = new Set();
   let section = "General";
 
   for (const rawLine of lines) {
-    const line = rawLine.replace(/ /g, " "); // nbsp -> space
+    const line = rawLine.replace(/ /g, " ");
 
-    // Update section from bold header lines
-    const headerMatch = line.match(SECTION_HEADER_RE);
+    const headerMatch = line.match(VOCAB_SECTION_HEADER);
     if (headerMatch) {
       section = clean(headerMatch[1]).replace(/[:.]+$/, "");
       continue;
     }
+    if (VOCAB_SKIP.some((re) => re.test(line))) continue;
 
-    if (SKIP_LINE_PATTERNS.some((re) => re.test(line))) continue;
-
-    let pair = tryParseTableRow(line) || tryParseLine(line);
+    const pair = tryParseTableRow(line) || tryParseLine(line);
     if (!pair) continue;
-
     let { dutch, english } = pair;
     dutch = clean(dutch);
     english = clean(english);
-    if (isUselessPair(dutch, english)) continue;
+    if (!dutch || !english || dutch.length > 120 || english.length > 120) continue;
+    if (/^\*+$/.test(dutch) || /^\*+$/.test(english)) continue;
 
     const { word, gender } = extractGender(dutch);
-
-    // Dedup key (case-insensitive on Dutch + English to keep variants from different sections)
-    const key = `${word.toLowerCase()}|${english.toLowerCase()}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-
-    const isPhrase = /\s/.test(word) && word.split(/\s+/).length >= 3;
+    const isPhrase = word.split(/\s+/).length >= 3;
 
     cards.push({
-      id: cards.length + 1,
       dutch: word,
       english,
       gender,
@@ -122,24 +118,112 @@ function parse(md) {
     });
   }
 
-  return cards;
+  return dedup(cards).map((c, i) => ({ id: i + 1, ...c }));
 }
 
-const md = fs.readFileSync(SOURCE, "utf8");
-const cards = parse(md);
+// ----- grammar parser ------------------------------------------------------
 
-fs.mkdirSync(path.dirname(OUT), { recursive: true });
-fs.writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), count: cards.length, cards }, null, 2));
+// Matches: "<dutch> _(english)_" anywhere
+const PAIR_RE = /^(.+?)\s*_\(([^)]+)\)_\s*$/;
 
-// Stats for stdout
-const bySection = cards.reduce((acc, c) => ((acc[c.section] = (acc[c.section] || 0) + 1), acc), {});
-const byType = cards.reduce((acc, c) => ((acc[c.type] = (acc[c.type] || 0) + 1), acc), {});
-console.log(`Wrote ${cards.length} cards to ${OUT}`);
-console.log("By type:", byType);
-console.log("Top sections:");
-Object.entries(bySection)
-  .sort((a, b) => b[1] - a[1])
-  .slice(0, 15)
-  .forEach(([s, n]) => console.log(`  ${n.toString().padStart(4)}  ${s}`));
-console.log("\nFirst 8 cards:");
-cards.slice(0, 8).forEach((c) => console.log(`  [${c.section}] ${c.gender ? `(${c.gender}) ` : ""}${c.dutch}  →  ${c.english}`));
+function extractPair(text) {
+  const cleaned = stripBoldItalic(text).trim();
+  const m = cleaned.match(PAIR_RE);
+  if (!m) return null;
+  const dutch = clean(m[1].replace(/^[-–—•\s]+/, ""));
+  const english = clean(m[2]);
+  if (!dutch || !english) return null;
+  if (dutch.length > 200 || english.length > 200) return null;
+  return { dutch, english };
+}
+
+function grammarSectionFromHeading(line) {
+  // ## 1) Title    | ## _**3) Pronouns:**_   | ## 14) Title:
+  const m = line.match(/^##\s+(.+?)\s*$/);
+  if (!m) return null;
+  let title = stripBoldItalic(m[1]).replace(/_/g, "").trim();
+  title = title.replace(/^[(]?(\d+)[):.]?\s*/, "");   // strip leading "1)" / "1:" etc.
+  title = title.replace(/[:.\s]+$/, "");
+  return title || null;
+}
+
+function parseGrammar(md) {
+  const lines = md.split("\n");
+  let section = "General";
+  const cards = [];
+
+  for (const rawLine of lines) {
+    const line = rawLine.replace(/ /g, " ");
+
+    if (line.startsWith("##")) {
+      const newSection = grammarSectionFromHeading(line);
+      if (newSection) section = newSection;
+      continue;
+    }
+    if (/^#\s/.test(line)) continue; // top-level title
+    if (/^\s*$/.test(line)) continue;
+
+    // Bullet list line: extract pair from the bullet text
+    const bullet = line.match(/^\s*[-*]\s+(.+)$/);
+    if (bullet) {
+      // also try inner bullets indented (already handled by leading-space match)
+      const pair = extractPair(bullet[1]);
+      if (pair) cards.push({ ...pair, section });
+      continue;
+    }
+
+    // Table row: split cells, try each
+    if (line.startsWith("|") && !/^\|[-:|\s]+\|/.test(line)) {
+      const cells = line.split("|").map((c) => c.trim()).filter(Boolean);
+      for (const cell of cells) {
+        const pair = extractPair(cell);
+        if (pair) cards.push({ ...pair, section });
+      }
+      continue;
+    }
+
+    // Plain paragraph: try direct
+    const pair = extractPair(line.trim());
+    if (pair) cards.push({ ...pair, section });
+  }
+
+  // Filter: drop entries where Dutch is just an article-only fragment or weird
+  const cleaned = cards.filter((c) => {
+    if (/^[-–—]+$/.test(c.dutch)) return false;
+    if (c.dutch.toLowerCase() === c.english.toLowerCase()) return false;
+    return true;
+  });
+
+  return dedup(cleaned).map((c, i) => ({ id: i + 1, ...c }));
+}
+
+// ----- run -----------------------------------------------------------------
+
+function writeJson(file, cards) {
+  const payload = { generatedAt: new Date().toISOString(), count: cards.length, cards };
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.writeFileSync(path.join(OUT_DIR, file), JSON.stringify(payload, null, 2));
+}
+
+function summarize(name, cards) {
+  const bySection = cards.reduce((acc, c) => ((acc[c.section] = (acc[c.section] || 0) + 1), acc), {});
+  console.log(`\n[${name}] ${cards.length} cards`);
+  Object.entries(bySection)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([s, n]) => console.log(`  ${n.toString().padStart(4)}  ${s}`));
+}
+
+const vocabMd = fs.readFileSync(SOURCES.vocab, "utf8");
+const grammarMd = fs.readFileSync(SOURCES.grammar, "utf8");
+
+const vocab = parseVocab(vocabMd);
+const grammar = parseGrammar(grammarMd);
+
+writeJson("vocab.json", vocab);
+writeJson("grammar.json", grammar);
+
+summarize("vocab", vocab);
+summarize("grammar", grammar);
+
+console.log("\nFirst 6 grammar cards:");
+grammar.slice(0, 6).forEach((c) => console.log(`  [${c.section}] ${c.dutch}  →  ${c.english}`));
