@@ -11,6 +11,7 @@ const MODULES = [
   { id: "vocab",   url: "vocab.json"   },
   { id: "grammar", url: "grammar.json" },
 ];
+const READER_URL = "texts.json";
 
 const els = {
   card: document.getElementById("card"),
@@ -30,9 +31,23 @@ const els = {
   progress: document.getElementById("progress"),
   srsStats: document.getElementById("srs-stats"),
   tabs: document.querySelectorAll(".tab"),
+  flashcardStage: document.getElementById("flashcard-stage"),
+  controls: document.querySelector(".controls"),
+  reader: document.getElementById("reader-stage"),
+  textPicker: document.getElementById("text-picker"),
+  textTitle: document.getElementById("text-title"),
+  textDutch: document.getElementById("text-dutch"),
+  textEnglish: document.getElementById("text-english"),
+  showTranslation: document.getElementById("show-translation"),
+  speakText: document.getElementById("speak-text"),
+  tooltip: document.getElementById("word-tooltip"),
+  tooltipDutch: document.querySelector(".word-tooltip-dutch"),
+  tooltipEnglish: document.querySelector(".word-tooltip-english"),
 };
 
 const data = { vocab: [], grammar: [] };
+let texts = []; // reader texts
+let currentText = null;
 let state = loadState();
 let queue = [];
 let currentIdx = 0;
@@ -57,6 +72,7 @@ function loadState() {
   return {
     currentModule: "vocab",
     modules: Object.fromEntries(MODULES.map((m) => [m.id, { byId: {}, prefs: defaultPrefs() }])),
+    reader: { lastTextId: null, showTranslation: false },
   };
 }
 function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
@@ -207,13 +223,147 @@ function syncTabs() {
 }
 
 function switchModule(id) {
-  if (!data[id] || state.currentModule === id) return;
+  if (state.currentModule === id) return;
   state.currentModule = id;
   saveState();
   syncTabs();
-  populateSectionFilter();
-  buildQueue();
-  render();
+  syncStageVisibility();
+  if (id === "read") {
+    renderReader();
+  } else {
+    populateSectionFilter();
+    buildQueue();
+    render();
+  }
+}
+
+function syncStageVisibility() {
+  const inReader = state.currentModule === "read";
+  els.flashcardStage.hidden = inReader;
+  els.controls.hidden = inReader;
+  els.reader.hidden = !inReader;
+  // Footer SRS stats only relevant in flashcard modes
+  document.querySelector(".bar--footer").style.visibility = inReader ? "hidden" : "visible";
+}
+
+// ---- Reader (Read module) ------------------------------------------------
+
+function tokenizeAndWrap(text) {
+  // Wrap each word in a clickable span. Punctuation kept as-is.
+  // We split with a regex that keeps separators.
+  const out = [];
+  // Match runs of word characters incl. apostrophe internal ('s, collega's), or anything else.
+  const re = /([\p{L}][\p{L}'’]*)|([^\p{L}]+)/gu;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    if (m[1]) {
+      const w = m[1];
+      const key = lookupKey(w);
+      const known = currentText && (currentText.glossary[key] !== undefined);
+      const span = document.createElement("span");
+      span.className = "w" + (known ? "" : " unknown");
+      span.dataset.word = key;
+      span.textContent = w;
+      out.push(span);
+    } else if (m[2]) {
+      out.push(document.createTextNode(m[2]));
+    }
+  }
+  return out;
+}
+
+function lookupKey(word) {
+  return word.toLowerCase().replace(/[’]/g, "'");
+}
+
+function renderReader() {
+  // Populate dropdown if empty
+  if (els.textPicker.options.length === 0 && texts.length > 0) {
+    for (const t of texts) {
+      const opt = document.createElement("option");
+      opt.value = t.id;
+      opt.textContent = `${t.title}  —  ${t.titleEn}`;
+      els.textPicker.appendChild(opt);
+    }
+  }
+  const targetId = state.reader.lastTextId && texts.some((t) => t.id === state.reader.lastTextId)
+    ? state.reader.lastTextId
+    : (texts[0] && texts[0].id);
+  if (targetId !== els.textPicker.value) els.textPicker.value = targetId;
+  loadText(targetId);
+}
+
+function loadText(id) {
+  currentText = texts.find((t) => t.id === id) || null;
+  if (!currentText) return;
+  state.reader.lastTextId = id;
+  saveState();
+
+  els.textTitle.textContent = `${currentText.title} — ${currentText.titleEn}`;
+  els.textDutch.innerHTML = "";
+  for (const node of tokenizeAndWrap(currentText.dutch)) els.textDutch.appendChild(node);
+  els.textEnglish.textContent = currentText.english;
+  els.textEnglish.hidden = !state.reader.showTranslation;
+  hideTooltip();
+}
+
+function showTooltipFor(span) {
+  if (!currentText) return;
+  const word = span.dataset.word;
+  const english = currentText.glossary[word];
+  if (!english) {
+    hideTooltip();
+    return;
+  }
+  // Mark active
+  document.querySelectorAll(".reader-dutch .w.active").forEach((el) => el.classList.remove("active"));
+  span.classList.add("active");
+
+  els.tooltipDutch.textContent = span.textContent;
+  els.tooltipEnglish.textContent = english;
+  els.tooltip.hidden = false;
+
+  // Position above the word, fall back to below if near top
+  const r = span.getBoundingClientRect();
+  const tipR = els.tooltip.getBoundingClientRect();
+  const margin = 6;
+  let top = r.top - tipR.height - margin;
+  if (top < 8) top = r.bottom + margin;
+  let left = r.left + r.width / 2 - tipR.width / 2;
+  left = Math.max(8, Math.min(window.innerWidth - tipR.width - 8, left));
+  els.tooltip.style.top = `${top}px`;
+  els.tooltip.style.left = `${left}px`;
+}
+
+function hideTooltip() {
+  els.tooltip.hidden = true;
+  document.querySelectorAll(".reader-dutch .w.active").forEach((el) => el.classList.remove("active"));
+}
+
+function bindReaderEvents() {
+  els.textPicker.addEventListener("change", () => loadText(els.textPicker.value));
+  els.showTranslation.addEventListener("click", () => {
+    state.reader.showTranslation = !state.reader.showTranslation;
+    saveState();
+    els.textEnglish.hidden = !state.reader.showTranslation;
+    els.showTranslation.style.opacity = state.reader.showTranslation ? "1" : "0.6";
+  });
+  els.speakText.addEventListener("click", () => {
+    if (currentText) speakDutch(currentText.dutch);
+  });
+  els.textDutch.addEventListener("click", (e) => {
+    const span = e.target.closest(".w");
+    if (span && !span.classList.contains("unknown")) {
+      showTooltipFor(span);
+    } else {
+      hideTooltip();
+    }
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".reader-dutch") && !e.target.closest(".word-tooltip")) {
+      hideTooltip();
+    }
+  });
 }
 
 function bindEvents() {
@@ -273,19 +423,28 @@ function bindEvents() {
 }
 
 async function loadData() {
-  const results = await Promise.all(
+  const moduleResults = Promise.all(
     MODULES.map((m) => fetch(m.url, { cache: "no-cache" }).then((r) => r.json()).then((j) => [m.id, j.cards]))
   );
+  const readerResult = fetch(READER_URL, { cache: "no-cache" }).then((r) => r.json());
+  const [results, readerData] = await Promise.all([moduleResults, readerResult]);
   for (const [id, cards] of results) data[id] = cards;
+  texts = readerData.texts || [];
 }
 
 async function init() {
   await loadData();
   syncTabs();
+  syncStageVisibility();
   populateSectionFilter();
   bindEvents();
-  buildQueue();
-  render();
+  bindReaderEvents();
+  if (state.currentModule === "read") {
+    renderReader();
+  } else {
+    buildQueue();
+    render();
+  }
 
   if ("serviceWorker" in navigator) {
     try { await navigator.serviceWorker.register("sw.js"); }

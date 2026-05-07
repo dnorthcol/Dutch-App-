@@ -22,6 +22,7 @@
     <nav class="tabs" role="tablist">
       <button class="tab" data-module="vocab" role="tab" aria-selected="true">Vocabulary</button>
       <button class="tab" data-module="grammar" role="tab" aria-selected="false">Grammar</button>
+      <button class="tab" data-module="read" role="tab" aria-selected="false">Read</button>
     </nav>
 
     <section class="controls">
@@ -50,7 +51,7 @@
       <button id="restart" class="ghost" aria-label="Restart deck" title="Restart deck">↻</button>
     </section>
 
-    <main class="stage">
+    <main class="stage" id="flashcard-stage">
       <div id="card" class="card" role="button" tabindex="0" aria-label="Tap to flip">
         <div class="face front">
           <div class="prompt-meta"><span id="card-section"></span><span id="card-gender"></span></div>
@@ -75,6 +76,25 @@
         <button id="next" class="ghost" aria-label="Next card">Next ›</button>
       </div>
     </main>
+
+    <main class="reader" id="reader-stage" hidden>
+      <div class="reader-toolbar">
+        <select id="text-picker" aria-label="Choose a text"></select>
+        <button id="show-translation" class="ghost" aria-label="Toggle full English translation">EN</button>
+        <button id="speak-text" class="ghost" aria-label="Speak Dutch text">🔊</button>
+      </div>
+      <article class="reader-body">
+        <h2 id="text-title"></h2>
+        <p id="text-dutch" class="reader-dutch"></p>
+        <p id="text-english" class="reader-english" hidden></p>
+        <p class="reader-hint">Tap a word for translation.</p>
+      </article>
+    </main>
+
+    <div id="word-tooltip" class="word-tooltip" role="tooltip" hidden>
+      <div class="word-tooltip-dutch"></div>
+      <div class="word-tooltip-english"></div>
+    </div>
 
     <footer class="bar bar--footer">
       <small id="srs-stats">Box 1: 0 · 2: 0 · 3: 0 · 4: 0 · 5: 0</small>

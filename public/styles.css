@@ -236,6 +236,116 @@ button.ghost {
 
 .actions[hidden] { display: none; }
 
+/* ---- Reader (Read tab) ----------------------------------------------- */
+
+.reader {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 10px 12px 12px;
+  gap: 8px;
+}
+.reader[hidden] { display: none; }
+
+.reader-toolbar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.reader-toolbar #text-picker {
+  flex: 1;
+  background: #0b1220;
+  color: var(--fg);
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.reader-toolbar button {
+  flex: 0 0 auto;
+  min-width: 44px;
+  min-height: 38px;
+}
+
+.reader-body {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg-card);
+  color: var(--fg-card);
+  border-radius: var(--radius);
+  padding: 18px 18px 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.reader-body h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.reader-dutch {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+  color: #0f172a;
+}
+.reader-english {
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  background: #e0f2fe;
+  border-radius: 12px;
+  color: #075985;
+}
+.reader-hint {
+  margin: 0;
+  font-size: 11px;
+  color: #64748b;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.reader-dutch .w {
+  display: inline-block;
+  padding: 1px 2px;
+  margin: 0 -1px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  transition: background 0.15s;
+}
+.reader-dutch .w.active {
+  background: #fde68a;
+  color: #422006;
+}
+.reader-dutch .w.unknown { color: #94a3b8; cursor: default; }
+
+/* Floating word tooltip */
+.word-tooltip {
+  position: fixed;
+  z-index: 1000;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  max-width: 80vw;
+  pointer-events: none;
+}
+.word-tooltip[hidden] { display: none; }
+.word-tooltip-dutch {
+  font-weight: 700;
+  color: var(--primary);
+}
+.word-tooltip-english {
+  margin-top: 2px;
+}
+
 /* Smaller phones in landscape or any short screen — squish further */
 @media (max-height: 700px) {
   .controls { padding: 6px 10px; }
