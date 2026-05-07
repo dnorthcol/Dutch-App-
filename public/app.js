@@ -11,7 +11,6 @@ const MODULES = [
   { id: "vocab",   url: "vocab.json"   },
   { id: "grammar", url: "grammar.json" },
 ];
-const READER_URL = "texts.json";
 
 const els = {
   card: document.getElementById("card"),
@@ -35,21 +34,9 @@ const els = {
   tabs: document.querySelectorAll(".tab"),
   flashcardStage: document.getElementById("flashcard-stage"),
   controls: document.querySelector(".controls"),
-  reader: document.getElementById("reader-stage"),
-  textPicker: document.getElementById("text-picker"),
-  textTitle: document.getElementById("text-title"),
-  textSubtitle: document.getElementById("text-subtitle"),
-  textSource: document.getElementById("text-source"),
-  textDutch: document.getElementById("text-dutch"),
-  textEnglish: document.getElementById("text-english"),
-  showTranslation: document.getElementById("show-translation"),
-  speakText: document.getElementById("speak-text"),
-  readerTrans: document.getElementById("reader-trans"),
 };
 
 const data = { vocab: [], grammar: [] };
-let texts = []; // reader texts
-let currentText = null;
 let state = loadState();
 let queue = [];
 let currentIdx = 0;
@@ -74,7 +61,6 @@ function loadState() {
   return {
     currentModule: "vocab",
     modules: Object.fromEntries(MODULES.map((m) => [m.id, { byId: {}, prefs: defaultPrefs() }])),
-    reader: { lastTextId: null, showTranslation: false },
   };
 }
 function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
@@ -238,146 +224,9 @@ function switchModule(id) {
   state.currentModule = id;
   saveState();
   syncTabs();
-  syncStageVisibility();
-  if (id === "read") {
-    renderReader();
-  } else {
-    populateSectionFilter();
-    buildQueue();
-    render();
-  }
-}
-
-function syncStageVisibility() {
-  const inReader = state.currentModule === "read";
-  els.flashcardStage.hidden = inReader;
-  els.controls.hidden = inReader;
-  els.reader.hidden = !inReader;
-  // Footer SRS stats only relevant in flashcard modes
-  document.querySelector(".bar--footer").style.visibility = inReader ? "hidden" : "visible";
-}
-
-// ---- Reader (Read module) ------------------------------------------------
-
-function tokenizeAndWrap(text) {
-  // Wrap each word in a clickable span. Punctuation kept as-is.
-  // We split with a regex that keeps separators.
-  const out = [];
-  // Match runs of word characters incl. apostrophe internal ('s, collega's), or anything else.
-  const re = /([\p{L}][\p{L}'’]*)|([^\p{L}]+)/gu;
-  let m;
-  while ((m = re.exec(text)) !== null) {
-    if (m[1]) {
-      const w = m[1];
-      const key = lookupKey(w);
-      const known = currentText && (currentText.glossary[key] !== undefined);
-      const span = document.createElement("span");
-      span.className = "w" + (known ? "" : " unknown");
-      span.dataset.word = key;
-      span.textContent = w;
-      out.push(span);
-    } else if (m[2]) {
-      out.push(document.createTextNode(m[2]));
-    }
-  }
-  return out;
-}
-
-function lookupKey(word) {
-  return word.toLowerCase().replace(/[’]/g, "'");
-}
-
-function renderReader() {
-  // Build pill picker if empty
-  if (els.textPicker.children.length === 0 && texts.length > 0) {
-    for (const t of texts) {
-      const pill = document.createElement("button");
-      pill.className = "text-pill";
-      pill.dataset.textId = t.id;
-      pill.setAttribute("role", "tab");
-      pill.setAttribute("aria-selected", "false");
-      pill.textContent = t.title;
-      pill.addEventListener("click", () => loadText(t.id));
-      els.textPicker.appendChild(pill);
-    }
-  }
-  const targetId = state.reader.lastTextId && texts.some((t) => t.id === state.reader.lastTextId)
-    ? state.reader.lastTextId
-    : (texts[0] && texts[0].id);
-  loadText(targetId);
-}
-
-function loadText(id) {
-  currentText = texts.find((t) => t.id === id) || null;
-  if (!currentText) return;
-  state.reader.lastTextId = id;
-  saveState();
-
-  // Update pill selection
-  els.textPicker.querySelectorAll(".text-pill").forEach((p) => {
-    p.setAttribute("aria-selected", p.dataset.textId === id ? "true" : "false");
-  });
-  // Auto-scroll picker so selected pill is visible
-  const activePill = els.textPicker.querySelector(`.text-pill[aria-selected="true"]`);
-  if (activePill) activePill.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
-
-  els.textTitle.textContent = currentText.title;
-  els.textSubtitle.textContent = currentText.titleEn;
-  if (currentText.source) {
-    els.textSource.textContent = currentText.source;
-    els.textSource.hidden = false;
-  } else {
-    els.textSource.hidden = true;
-  }
-  els.textDutch.innerHTML = "";
-  for (const node of tokenizeAndWrap(currentText.dutch)) els.textDutch.appendChild(node);
-  els.textEnglish.textContent = currentText.english;
-  els.textEnglish.hidden = !state.reader.showTranslation;
-  els.showTranslation.setAttribute("aria-pressed", state.reader.showTranslation ? "true" : "false");
-  resetTranslationBar();
-}
-
-function resetTranslationBar() {
-  els.readerTrans.innerHTML = '<span class="reader-trans-hint">Tap any word for translation</span>';
-}
-
-function showTranslation(span) {
-  if (!currentText) return;
-  const word = span.dataset.word;
-  const english = currentText.glossary[word];
-  if (!english) {
-    resetTranslationBar();
-    return;
-  }
-  // Highlight active
-  document.querySelectorAll(".reader-dutch .w.active").forEach((el) => el.classList.remove("active"));
-  span.classList.add("active");
-
-  els.readerTrans.innerHTML = "";
-  const dEl = document.createElement("span");
-  dEl.className = "reader-trans-dutch";
-  dEl.textContent = span.textContent;
-  const enEl = document.createElement("span");
-  enEl.className = "reader-trans-en";
-  enEl.textContent = english;
-  els.readerTrans.appendChild(dEl);
-  els.readerTrans.appendChild(enEl);
-}
-
-function bindReaderEvents() {
-  els.showTranslation.addEventListener("click", () => {
-    state.reader.showTranslation = !state.reader.showTranslation;
-    saveState();
-    els.textEnglish.hidden = !state.reader.showTranslation;
-    els.showTranslation.setAttribute("aria-pressed", state.reader.showTranslation ? "true" : "false");
-  });
-  els.speakText.addEventListener("click", () => {
-    if (currentText) speakDutch(currentText.dutch);
-  });
-  els.textDutch.addEventListener("click", (e) => {
-    const span = e.target.closest(".w");
-    if (span && !span.classList.contains("unknown")) showTranslation(span);
-  });
+  populateSectionFilter();
+  buildQueue();
+  render();
 }
 
 function bindEvents() {
@@ -437,28 +286,24 @@ function bindEvents() {
 }
 
 async function loadData() {
-  const moduleResults = Promise.all(
+  const results = await Promise.all(
     MODULES.map((m) => fetch(m.url, { cache: "no-cache" }).then((r) => r.json()).then((j) => [m.id, j.cards]))
   );
-  const readerResult = fetch(READER_URL, { cache: "no-cache" }).then((r) => r.json());
-  const [results, readerData] = await Promise.all([moduleResults, readerResult]);
   for (const [id, cards] of results) data[id] = cards;
-  texts = readerData.texts || [];
 }
 
 async function init() {
+  // Migrate state if user previously had Read module selected
+  if (state.currentModule && !MODULES.find((m) => m.id === state.currentModule)) {
+    state.currentModule = "vocab";
+    saveState();
+  }
   await loadData();
   syncTabs();
-  syncStageVisibility();
   populateSectionFilter();
   bindEvents();
-  bindReaderEvents();
-  if (state.currentModule === "read") {
-    renderReader();
-  } else {
-    buildQueue();
-    render();
-  }
+  buildQueue();
+  render();
 
   if ("serviceWorker" in navigator) {
     try { await navigator.serviceWorker.register("sw.js"); }

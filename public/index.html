@@ -22,7 +22,6 @@
     <nav class="tabs" role="tablist">
       <button class="tab" data-module="vocab" role="tab" aria-selected="true">Vocabulary</button>
       <button class="tab" data-module="grammar" role="tab" aria-selected="false">Grammar</button>
-      <button class="tab" data-module="read" role="tab" aria-selected="false">Read</button>
     </nav>
 
     <section class="controls">
@@ -85,27 +84,6 @@
       </div>
     </main>
 
-    <main class="reader" id="reader-stage" hidden>
-      <nav class="text-picker" id="text-picker" role="tablist" aria-label="Choose a text"></nav>
-
-      <article class="reader-body">
-        <header class="reader-head">
-          <h2 id="text-title"></h2>
-          <p class="reader-subtitle" id="text-subtitle"></p>
-          <small class="reader-source" id="text-source" hidden></small>
-        </header>
-        <p id="text-dutch" class="reader-dutch"></p>
-        <div id="text-english" class="reader-english" hidden></div>
-      </article>
-
-      <div class="reader-bar">
-        <div class="reader-trans" id="reader-trans" aria-live="polite">
-          <span class="reader-trans-hint">Tap any word for translation</span>
-        </div>
-        <button id="show-translation" class="reader-bar-btn" aria-label="Toggle full English translation" aria-pressed="false">EN</button>
-        <button id="speak-text" class="reader-bar-btn" aria-label="Read text aloud">🔊</button>
-      </div>
-    </main>
 
     <footer class="bar bar--footer">
       <small id="srs-stats">Box 1: 0 · 2: 0 · 3: 0 · 4: 0 · 5: 0</small>
